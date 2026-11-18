@@ -1,0 +1,39 @@
+{
+    "name": "wardsense",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:integration": "RUN_INTEGRATION=1 vitest run tests/integration",
+        "test:e2e": "playwright test",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@supabase/ssr": "^0.6.1",
+        "@supabase/supabase-js": "^2.49.0",
+        "next": "^15.3.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "recharts": "^2.15.0",
+        "server-only": "^0.0.1",
+        "zod": "^3.24.0"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.49.0",
+        "@tailwindcss/postcss": "^4.0.0",
+        "@types/node": "^22.10.0",
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.7.0",
+        "vitest": "^2.1.0"
+    },
+    "allowScripts": {
+        "esbuild@0.21.5": true
+    }
+}
